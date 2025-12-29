@@ -1,4 +1,4 @@
-# Chatbot Project using Data Structures and Algorithms (DSA)
+aa# Chatbot Project using Data Structures and Algorithms (DSA)
 
 A comprehensive C++ chatbot implementation demonstrating various data structures and algorithms.
 
@@ -20,7 +20,28 @@ Project/
 ├── Makefile           - Build configuration
 └── README.md          - This file
 ```
-
+## Architecture
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     Flutter Mobile App                       │
+│                    (Android/iOS/Web)                         │
+└────────────────────────┬────────────────────────────────────┘
+                         │ HTTP/REST API
+                         ↓
+┌─────────────────────────────────────────────────────────────┐
+│              C++ REST API Server (Port 8081)                │
+│   ┌──────────────┐  ┌──────────────┐  ┌──────────────┐    │
+│   │   Chatbot    │  │   Firebase   │  │  Guardian    │    │
+│   │   Engine     │→ │   Client     │  │  News API    │    │
+│   └──────────────┘  └──────────────┘  └──────────────┘    │
+└────────────────────────┬────────────────────────────────────┘
+                         │ REST API
+                         ↓
+┌─────────────────────────────────────────────────────────────┐
+│              Firebase Realtime Database                      │
+│         (User Data, Chat History, Responses)                │
+└─────────────────────────────────────────────────────────────┘
+```
 ## Data Structures Used
 
 ### 1. **Linked List** (`LinkedList.h/cpp`)
@@ -55,6 +76,14 @@ Project/
      - Multiple values per key
      - Load factor calculation
      - O(1) average case lookup
+     
+### Flutter App
+
+1. **Login** with Firebase Auth
+2. **Chat** with bot in real-time
+3. **Switch personalities** (Buddy, Professor, Tech Guru)
+4. **View statistics** (message counts, daily activity)
+5. **Add custom responses** for personalized interactions
 
 ## Features
 
@@ -165,6 +194,11 @@ Where:
 - C++11 or higher
 - Standard C++ libraries
 - Compiler: g++, clang++, or MSVC
+
+##  Author
+
+**Maryam Jahangir**  
+DSA & Full-Stack Development Project
 
 ## License
 
