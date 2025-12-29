@@ -166,10 +166,6 @@ Where:
 - Standard C++ libraries
 - Compiler: g++, clang++, or MSVC
 
-## Author
-
-DSA Project - Chatbot Implementation
-
 ## License
 
 Educational Project
