@@ -1,0 +1,5 @@
+*.exe
+credentials.txt
+config.txt
+.vscode/
+flutter/build/

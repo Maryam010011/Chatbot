@@ -1,0 +1,7 @@
+==========================================
+   Chatbot API Server with Firebase     
+==========================================
+Config loaded. Port: 8081
+✅ Server running on port 8081
+🌐 CORS enabled for web browser access
+^C
