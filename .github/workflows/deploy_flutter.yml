@@ -30,7 +30,7 @@ jobs:
         run: |
           cd flutter
           flutter pub get
-          flutter build web --release
+          flutter build web --release --base-href "/Chatbot/"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
